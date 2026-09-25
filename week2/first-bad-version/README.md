@@ -4,13 +4,14 @@ First Bad Version
 The task is to find the first bad version among versions numbered from 1 to n.
 There is an API called isBadVersion(version) that tells whether a particular version is bad.
 The important property is that once a version becomes bad, every version after it is also bad.
-
+```text
 For example:
 
 Version:  1  2  3  4  5
 Status:   G  G  G  B  B
                   ↑
              first bad
+```
 
 The goal is to find the first bad version.
 
