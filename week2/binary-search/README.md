@@ -1,4 +1,4 @@
-#Binary Search
+###Binary Search
 1. Problem
 2. The task is to find a target value in a sorted array of integers.
 If the target exists in the array, I need to return its index. If it does not exist, I return -1.
