@@ -45,7 +45,7 @@ isBadVersion(4) → true
 Then it returns 4.
 
 The Java implementation of this first approach was:
-
+```text
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
         for (int version = 1; version <= n; version++) {
@@ -57,7 +57,7 @@ public class Solution extends VersionControl {
         return -1;
     }
 }
-
+```
 Problem With the Initial Approach
 
 The linear solution works for small inputs, but it becomes very slow when n is very large.
@@ -107,7 +107,7 @@ If isBadVersion(mid) is false, mid is definitely not bad, so the first bad versi
 When left and right become equal, that version is the first bad version.
 
 The improved solution is:
-
+```text
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
         int left = 1;
@@ -126,7 +126,7 @@ public class Solution extends VersionControl {
         return left;
     }
 }
-
+```
 3. Time Complexity
 Initial Approach
 
