@@ -20,13 +20,14 @@ Initial Approach
 
 My first solution was a simple linear search.
 I started with version 1 and checked every version one by one.
-
+```text
 The idea was:
 
 Check version 1
 Check version 2
 Check version 3
 ...
+```
 
 As soon as isBadVersion(version) returned true, I returned that version.
 For example, if:
