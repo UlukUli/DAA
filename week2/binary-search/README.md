@@ -70,8 +70,9 @@ Improved Approach
 Time Complexity: O(log n)
 Binary search eliminates approximately half of the remaining elements after every comparison.
 The search space changes approximately like this:
-
+...
 n
+...
 n / 2
 n / 4
 n / 8
