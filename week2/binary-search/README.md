@@ -2,11 +2,11 @@
 1. Problem
 2. The task is to find a target value in a sorted array of integers.
 If the target exists in the array, I need to return its index. If it does not exist, I return -1.
-
+```text
 For example:
 nums = [-1, 0, 3, 5, 9, 12]
 target = 9
-
+```
 Output: 4
 
 The value 9 is at index 4.
