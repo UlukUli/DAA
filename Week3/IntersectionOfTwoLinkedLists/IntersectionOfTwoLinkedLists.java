@@ -8,13 +8,11 @@ class Solution {
 
         ListNode current = headA;
 
-        // Store all nodes from list A
         while (current != null) {
             nodesA.add(current);
             current = current.next;
         }
 
-        // Check nodes from list B
         current = headB;
 
         while (current != null) {
