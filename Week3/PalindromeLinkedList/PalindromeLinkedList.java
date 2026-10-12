@@ -7,13 +7,11 @@ class Solution {
 
         ListNode current = head;
 
-        // Store all values
         while (current != null) {
             values.add(current.val);
             current = current.next;
         }
 
-        // Compare values from both ends
         int left = 0;
         int right = values.size() - 1;
 
