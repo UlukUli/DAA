@@ -1,5 +1,3 @@
-package week8.Task938;
-
 public class Main {
 
     static class TreeNode {
@@ -18,21 +16,19 @@ public class Main {
             return 0;
         }
 
-        // Current value is too small.
-        // Everything on the left is even smaller,
-        // so we only search the right subtree.
+        // If the current value is smaller than low,
+        // we only need to search the right subtree.
         if (root.val < low) {
             return rangeSumBST(root.right, low, high);
         }
 
-        // Current value is too large.
-        // Everything on the right is even larger,
-        // so we only search the left subtree.
+        // If the current value is larger than high,
+        // we only need to search the left subtree.
         if (root.val > high) {
             return rangeSumBST(root.left, low, high);
         }
 
-        // Current value is inside the required range.
+        // The current value is inside the required range.
         return root.val
                 + rangeSumBST(root.left, low, high)
                 + rangeSumBST(root.right, low, high);
@@ -70,6 +66,9 @@ public class Main {
 
         int result = rangeSumBST(root, low, high);
 
-        System.out.println("Sum of values in range [" + low + ", " + high + "]: " + result);
+        System.out.println(
+                "Sum of values in range [" +
+                low + ", " + high + "]: " + result
+        );
     }
 }
