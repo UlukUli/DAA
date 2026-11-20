@@ -1,5 +1,3 @@
-package week8.Task108;
-
 public class Main {
 
     static class TreeNode {
@@ -48,15 +46,20 @@ public class Main {
                 root.val
         );
 
-        if (root.left != null || root.right != null) {
+        if (root.left != null) {
+            printTree(
+                    root.left,
+                    prefix + (isLeft ? "│   " : "    "),
+                    true
+            );
+        }
 
-            if (root.left != null) {
-                printTree(root.left, prefix + (isLeft ? "│   " : "    "), true);
-            }
-
-            if (root.right != null) {
-                printTree(root.right, prefix + (isLeft ? "│   " : "    "), false);
-            }
+        if (root.right != null) {
+            printTree(
+                    root.right,
+                    prefix + (isLeft ? "│   " : "    "),
+                    false
+            );
         }
     }
 
