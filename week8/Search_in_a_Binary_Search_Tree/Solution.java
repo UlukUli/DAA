@@ -1,5 +1,3 @@
-package week8.Task700;
-
 public class Main {
 
     static class TreeNode {
@@ -69,7 +67,7 @@ public class Main {
         TreeNode result = searchBST(root, val);
 
         if (result != null) {
-            System.out.println("Node found.");
+            System.out.println("Node found!");
             System.out.print("Subtree: ");
             printTree(result);
             System.out.println();
